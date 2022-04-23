@@ -33,6 +33,9 @@ a:visited{
     color: black;
 }
 
+.clr{
+    clear:both;
+}
 
 .box-1{
     background-color: #333;
@@ -96,5 +99,79 @@ text-align: center;
 }
 
 .my-form .form-group{
-    padding-bottom: 15px;;
+    padding-bottom: 15px;
+}
+
+.my-form label{
+    display: block;
+}
+.my-form input [type="text"], .my-form textarea{
+    padding: 8px;
+    width: 100%;
+}
+
+.my-form input [type="submit"]{
+    background-color: #333;
+    color:#fff;
+    padding: 10px 15px;
+    border: none;
+}
+
+.block{
+    float: left;
+    width: 33.3%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#main-block{
+    float:left;
+    width: 70%;
+}
+
+#sidebar{
+    float:right;
+    width:30%;
+}
+
+.p-box{
+    width: 800px;
+    height: 500px;
+    border: 1px solid #000;
+    margin-top: 30px;
+    position: relative;
+    background-image: url('../images/Image Background.jpg');
+    background-position: 100px 200px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.p-box h1{
+    position: absolute;
+    top: 40px;
+    left: 200px;
+}
+
+.p-box h2{
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+}
+
+.fix-me{
+    position: fixed;
+    top: 400px;
+}
+
+.my-list li:first-child{
+    background: red;
+}
+
+.my-list li:last-child{
+    background-color: blue;
+}
+
+.my-list li:nth-child(even){
+    background: yellow;
 }
