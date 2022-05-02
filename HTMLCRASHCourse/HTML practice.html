@@ -1,138 +1,73 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>HTML Cheat Sheet</title>
-        </head>
-        <body>
-            <a href="Blog.html">Go to blog</a>
-            <hr>
-           <!-- Headings --> 
-           <h1>Heading One</h1>
-           <h2>Heading Two</h2>
-           <h3>Heading Three</h3>
-           <h4>Heading Four</h4>
-           <h5>Heading Five</h5>
-           <h6>Heading Six</h6>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniProject</title>
+</head>
+<body>
+    <section>
+        <nav>
+            <img src="./HTML Practise Assets/HTML Practise Assets/FES.svg" alt="">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#discord">Discord</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1>Best place to learn Front-End</h1>
+            <p>Go from being an absolute beginner, to a pro with a simplified process!</p>
+            <button>Start Now!</button>
+        </header>
+        <div>
+            <figure>
+                <img src="./HTML Practise Assets/HTML Practise Assets/laptop.png" alt="Home page image">
+            </figure>
+        </div>
+    </section>
 
-           <!--Paragraph-->
-           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet quae placeat ab <a href="https://google.com" target="_blank">perferendis dolorum facere vitaea</a>, eos repudiandae aperiam tempore.</p>
+    <main>
+        <section id="about">
+        <h2>About</h2>
+        <div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus minima quisquam magnam quidem facere sunt, illo, deleniti in maxime facilis corrupti quae fugit voluptatum velit eaque quia quaerat? Maiores, hic.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, excepturi? Assumenda id nisi veniam? Quis, odit animi nihil iste mollitia voluptas rem earum adipisci similique eos et, quaerat, impedit consequatur!</p>
+        </div>
+        <figure>
+            <img src="/HTMLCRASHCourse/HTML Practise Assets/HTML Practise Assets/about.jpg" alt="About page image">
+        </figure>
+        </section>
 
-           <!--Lists-->
-           <ul>
-               <li>List Item 1</li>
-               <li>List Item 2</li>
-               <li>List Item 3</li>
-               <li>List Item 4</li>
-           </ul>
-
-           <ol>
-            <li>List Item 1</li>
-            <li>List Item 2</li>
-            <li>List Item 3</li>
-            <li>List Item 4</li>
-            </ol>
-
-           <!--Table-->
-           <table>
-               <thead>
-                   <tr>
-                       <th>Name</th>
-                       <th>Email</th>
-                       <th>Age</th>
-                   </tr>
-                   <tbody>
-                    <td>John Doe</td>
-                    <td>JD@gmail.com</td>
-                    <td>23</td>
-                    </tr>
-
-                </tr>
-                <tbody>
-                 <td>Ryan Norin</td>
-                 <td>mrpotatofart123@gmail.com</td>
-                 <td>19</td>
-                 </tr>
-                
-                   </tbody>
-               </thead>
-           </table>
-
-           <br>
-           <hr>
-           <br>
-
-           <!--Forms-->
-           <form action="process.php" method="POST">
+        <section id="discord">
+            <h2>Discord</h2>
             <div>
-               <label">First Name</label>
-               <input type="text" name="firstName"
-               placeholder="Enter first name">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quasi provident facere quidem id, dignissimos expedita illo sed voluptate exercitationem modi earum? Perferendis mollitia, architecto dolores dolorum quos sint eveniet.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat repudiandae nulla dolor esse quis magni pariatur magnam vitae blanditiis eum temporibus, eligendi numquam ad et! Velit illo laboriosam natus sequi.</p>
             </div>
+            <figure><img src="./HTML Practise Assets/HTML Practise Assets/discord.png" alt=""></figure>
+        </section>
 
-            <br>
+        <section id="contact"></section>
+        <h2>Contact</h2>
+        <form action="">
+            <label for="Email"></label>
+            <input type="text" placeholder="john.doe@example.com">
+            <label for="Email"></label>
+            <textarea type="text" placeholder="Enter your message"></textarea>
+        </form>
+    </main>
 
-            <div>
-               <label">Last Name</label>
-               <input type="text" name="lastName"
-               placeholder="Enter last name">
-            </div>
-
-            <br><br>
-
-            <div>
-                <label">Email</label>
-                <input type="email" name="email"
-                placeholder="Enter email address">
-            </div>
-
-            <br>
-
-            <div>
-                <label">Message</label>
-               <textarea name="message" id="" cols="30" rows="10"></textarea>
-            </div>
-
-            <br>
-
-            <div>
-                <label">Gender</label>
-                <select name="gender">
-                  <option value="male">Male</option>
-                 <option value="female">Female</option>
-                 <option value="other">Other</option>
-                </select>
-            </div>
-            <br>
-            <div>
-                <label>Birthday:</label>
-                <input type="date" name="birthday"
-                >
-            </div>
-            <br>
-
-            <div>
-                <label>Age:</label>
-                <input type="number" name="age"
-                value="30">
-            </div>
-            <br>
-
-        <input type="submit" name="submit"
-        value="Submit">
-    </form>
-
-    <!--Button-->
-    <button>Click Me!</button>
-    <br>
-    <!--Image-->
-    <img src="Sample.jpg" alt="My Sample Image">
-
-    <!--Quotations-->
-    <blockquote cite="https://google.com">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, iusto.
-    </blockquote>
-
-    <p><cite>HTML crash course</cite> by Ryan Norin</p>
-    <div style= "margin-top:300px"></div>
-        </body>
-    </head>
+    <footer>
+        <img src="./HTML Practise Assets/HTML Practise Assets/FES.svg" alt="">
+        <div>
+            <a href="#about">About</a>
+            <a href="#discord">Discord</a>
+            <a href="#contact">Contact</a>
+            <a href="">Courses</a>
+        </div>
+        <p>Copyright Frontend simplified</p>
+    </footer>
+</body>
+</html>
