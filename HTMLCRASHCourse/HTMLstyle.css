@@ -138,6 +138,7 @@ CONTACT
 
 #contact {
     background-color: #dce9ff;
+    padding: 24px;
 }
 
 form {
@@ -146,6 +147,7 @@ form {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    padding: 0 24px;
 }
 
 input, textarea {
@@ -178,4 +180,56 @@ footer {
 
 .footer__link {
     padding-right: 24px;
+}
+
+@media (max-width: 728px) {
+    .row{
+        flex-direction: column;
+    }
+
+    .home_description {
+        margin-bottom: 24px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 60px;
+    }
+
+    .sub-header {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .home__description--button {
+        max-width: 240px;
+    }
+
+    ul {
+        display: none;
+    }
+   
+
+    .section__description {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section__description--wrapper{
+        width: 100%;
+    }
+    .about__img--wrapper {
+        width: 100%;
+    }
+
+    #discord .section__description{
+        flex-direction: column-reverse;
+    }
+
+    .footer__logo {
+        max-width: 360px;
+    }
+
 }
