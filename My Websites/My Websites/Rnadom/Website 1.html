@@ -5,63 +5,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Project</title>
+    <title>Treact Website</title>
     <link rel="stylesheet" href="style1.css">
 </head>
 
 <body>
 
-    <section id="nav__bar">
-        <nav class="nav__title">
-            <img class="logo" src="./Assets/logo.svg" alt="">
-            <ul class="main__nav--links">
-                <li class="main__nav--link">
-                    <a class="link" href="">Treact</a>
-                </li>
+    <section id="landing">
+        <header class="header">
+            <nav class="nav__links">
+                <a href="" class="nav__main--link">
+                    <img src="./Assets/logo.svg" alt="" class="img">
+                    Treact
+                </a>
+                <div class="nav__other--links">
+                    <a href="" class="nav__other--link">About</a>
+                    <a href="" class="nav__other--link">Blog</a>
+                    <a href="" class="nav__other--link">Pricing</a>
+                    <a href="" class="nav__other--link">Contact Us</a>
+                    <a href="" class="nav__other link nav__login">About</a>
+                    <button class="btn__main">Sign Up</button>
+                </div>
+            </nav>
+        </header>
 
-                <li class="nav__link">
-                    <a class="link" href="">About</a>
-                </li>
-
-                <li class="nav__link">
-                    <a class="link" href="">Blog</a>
-                </li>
-
-                <li class="nav__link">
-                    <a class="link" href="">Pricing</a>
-                </li>
-
-                <li class="nav__link">
-                    <a class="link" href="">Contact Us</a>
-                </li>
-
-                <li class="nav__link">
-                    <a class="link" href="">Login</a>
-                </li>
-
-                <li class="nav__link">
-                    <a class="link" href="">Sign Up</a>
-                </li>
-            </ul>
-        </nav>
-    </section>
-
-    <section id="main">
-
-    <header id="main__section">
-        <div class="row">
-            <h1 class="main__header">Beautiful React Templates <label for="" class="blue">for you.</label></h1>
-            <p class="main__para">Our templates are easy to setup, understand and customuize. Fully modular
-                components witha variety of pages and components.</p>
-            <form action="">
-                <input type="text" id="email" placeholder="Your Email Address"> <button>Get Started</button>
-            </form>
-            <img src="./Assets/design-illustration-2.6da6a00b.svg" alt="design-illustration-2">
+        <div class="header">
+            <div class="row">
+                <div class="container">
+                    <h1 class="main__heading">
+                        Beautiful React Templates <span class="blue">for you.</span>
+                    </h1>
+                    <p class="main__heading--para">
+                        Our templates are easy to setup, understand and customize. Fully modular components with a
+                        variety of pages and components.
+                    </p>
+                    <div class="main__heading--input-action">
+                        <input type="text" placeholder="Your E-mail address">
+                        <button class="btn__main">Get Started</button>
+                    </div>
+                </div>
+                <div class="main__img--wrapper">
+                    <div class="main__img">
+                        <img class="main__img--logo" src="./Assets/design-illustration-2.6da6a00b.svg" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
-
-    </header>
-</section>
-
+    </section>
+    <br>
+    <section id="features">
+        <div class="features__row">
+            <div class="features__container">
+                <h1 class="features__title"> 
+                    <label for="" class="blue">FEATURES</label>
+                </h1>
+                <div class="features__main">
+                <h2 class="features__para">We have amazing <label for="" class="blue">Service.</label></h2>
+                    <p class="features__sub-title">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, ullam?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
