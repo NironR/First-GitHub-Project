@@ -9,11 +9,13 @@
 
 a {
     text-decoration: none;
-    color: #0A5A9F;
 }
 
 a:hover {
     text-decoration: underline;
+}
+a.register: {
+    text-decoration: none;
 }
 
 a:visited {
@@ -61,10 +63,16 @@ input[type=text] {
     font-size: 20px;
     font-weight: bold;
     padding: 8px;
+    color: #0A5A9F;
+}
+
+.nav__login {
+    color: #0A5A9F;
 }
 
 .nav__other--link {
     margin-right: 16px;
+    color: #0A5A9F;
 }
 
 .landing__section {
@@ -381,4 +389,76 @@ color: white;
 .plan__feature--business {
     padding: 8px;
     font-weight: bold;
+}
+
+/* FOOTER */
+
+#footer {
+    background-color: #5A2CED;
+}
+.footer__row {
+    width: 100%;
+
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.footer__links--all {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__main--link {
+    padding-bottom: 12px;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    width: calc(100%/5);
+    align-items: center;
+    color: white;
+}
+
+.footer__link {
+    padding: 12px;
+    font-size: 14px;
+}
+
+.brand {
+    width: 30px;
+}
+
+.footer__nav--bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.footer__logo {
+    width: 30px;
+    color: white;
+}
+
+.footer__main--link {
+    text-transform: uppercase;
+}
+
+.footer__row {
+    background-color: #5A2CED;
+}
+
+.brand {
+    filter: brightness(0) invert(1);
+}
+
+.copyright__text {
+    color: white;
+}
+
+.footer__title {
+    color: white;
+    font-weight: bold;
+    padding: 8px;
 }
