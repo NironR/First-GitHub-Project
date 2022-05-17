@@ -1,10 +1,19 @@
-let lap1 = 34
-let lap2 = 33
-let lap3 = 36
 
+let countEl = document.getElementById("count-el")
+let saveEl = document.getElementById( "save-el")
+let count = 0
 
-function logLapTime () {
-    console.log (lap1 + lap2 + lap3)
+function increment() {
+    count += 1
+    countEl.innerText = count
 }
 
-logLapTime()
+function save() {
+    let countStr = count + " - "
+    saveEl.textContent += countStr
+    console.log(count)
+}
+
+
+
+
