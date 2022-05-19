@@ -7,10 +7,15 @@
 .numbers {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
     padding: 8px;
     font-size: 48px;
+}
+
+.main__title {
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
 }
 
 .button__classes {
@@ -26,5 +31,12 @@
 .btn__main {
     padding: 12px;
     margin: 12px;
+}
+
+.answer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
 }
 
