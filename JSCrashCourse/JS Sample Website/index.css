@@ -14,6 +14,17 @@
 }
 
 .button__classes {
-    
+    display: flex;
+    justify-content: center;
+    margin: 12px;
+}
+
+.number {
+    padding: 12px;
+}
+
+.btn__main {
+    padding: 12px;
+    margin: 12px;
 }
 

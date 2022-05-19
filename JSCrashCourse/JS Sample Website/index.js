@@ -1,19 +1,17 @@
+let num1 = 8
+let num2 = 2
 
-let countEl = document.getElementById("count-el")
-let saveEl = document.getElementById( "save__el")
-let count = 0
+document.getElementById("num1-el").textContent = num1
+document.getElementById("num2-el").textContent = num2
 
-function increment() {
-    count += 1
-    countEl.innerText = count
+
+let sumEl = document.getElementById("sum-el")
+
+function add() {
+    sumEl.textContent = num1 + num2
 }
 
-function save() {
-    let countStr = count + " - "
-    saveEl.textContent += countStr
-    countEl.textContent = 0
-    count = 0
-}
+add()
 
 
 
