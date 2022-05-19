@@ -5,6 +5,9 @@ let hasBlackjack = false
 let isAlive = true
 let message = ""
 
+let messageEl = document.getElementById( "message-el")
+
+function startGame() {
 if (sum <= 20) {
     message = "Do you want to draw a new card?"
 } else if (sum === 21) {
@@ -14,11 +17,10 @@ if (sum <= 20) {
     message = "Busted! You're out of the game!"
     isAlive = false
 }
+}
 
-console.log (isAlive)
+messageEl.textContent = message
 
-
-console.log (message)
 
 /*document.getElementById("num1-el").textContent = firstCard
 document.getElementById("num2-el").textContent = secondCard
