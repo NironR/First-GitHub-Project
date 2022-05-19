@@ -1,17 +1,18 @@
-let num1 = 8
-let num2 = 2
+let num1 = 9
+let num2 = 10
 
-document.getElementById("num1-el").textContent = num1
-document.getElementById("num2-el").textContent = num2
 
+document.getElementById("num1-el").textContent = firstCard
+document.getElementById("num2-el").textContent = secondCard
 
 let sumEl = document.getElementById("sum-el")
 
-function add() {
-    sumEl.textContent = num1 + num2
+
+function hit() {
+let sumEl.textContent = firstCard + secondCard
 }
 
-add()
+
 
 
 
