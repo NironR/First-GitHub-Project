@@ -1,3 +1,6 @@
-let randomNumber = Math.random() * 6
+function rollDice() {
+let randomNumber = Math.floor ( Math.random()*7) + 1
+return randomNumber
+}
 
-console.log(randomNumber)
+console.log (rollDice())

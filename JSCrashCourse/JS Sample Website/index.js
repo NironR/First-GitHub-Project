@@ -1,18 +1,31 @@
-/*
-firstCard = 10
-secondCard = 4
-cards = [firstCard, secondCard]
-sum = firstCard + secondCard
+
+cards = []
+sum = 0
 hasBlackjack = false
-isAlive = true
+isAlive = false
 message = ""
-sumEl = document.getElementById ("sum-el")
 messageEl = document.getElementById( "message-el")
 sumEl = document.getElementById ( "sum-el")
 cardsEl = document.getElementById ("cards-el")
 
+function getRandomCard() {
+    let randomNumber = Math.floor ( Math.random()*13) + 1
+return randomNumber
+if (randomNumber === 1) {
+    return 11
+} else if (randomNumber > 10) {
+    return 10
+}
+
+}
+
 function startGame() {
-    renderGame ()
+    isAlive = true
+    firstCard = getRandomCard()
+    secondCard = getRandomCard()
+    cards = [firstCard, secondCard]
+    sum = firstCard + secondCard
+     renderGame()
 }
 
 function renderGame(){
@@ -35,41 +48,15 @@ function renderGame(){
 } 
 
 function newCard () {
-    let card = 6
+    let card = getRandomCard()
     sum += card
     cards.push (card)
     console.log (cards)
     renderGame ()
 }
     
-*/
 
-player1Time = 102
-player2Time = 107
 
-/* function getFastestRaceTime() {
-    if (player1Time < player2Time) {
-        return player1Time
-    } else if (player2Time < player1Time) {
-        return player2Time
-    } else {
-        return player1Time
-    }
-}
-
-fastestRace = getFastestRaceTime()
-
-console.log(getFastestRaceTime())
-
-*/
-
-function getTotalRaceTime() {
-    return player1Time + player2Time
-}
-
-totalTime = getTotalRaceTime ()
-
-console.log(totalTime)
 
 
     
