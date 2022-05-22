@@ -1,6 +1,10 @@
-function rollDice() {
-let randomNumber = Math.floor ( Math.random()*7) + 1
-return randomNumber
+let hasSolvedChallenge = false
+let hasHintsleft = false
+
+if (hasSolvedChallenge === false && hasHintsleft === false) {
+    showSolution()
 }
 
-console.log (rollDice())
+function showSolution () {
+    console.log ("Showing the solution...")
+}
