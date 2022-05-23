@@ -45,9 +45,13 @@ largeCountries.unshift("China")
 
 console.log (largeCountries) */
 
-let dayofMonth = 31
+/* let dayofMonth = 31
 let weekday = "Friday"
 
 if (weekday === "Friday" && dayofMonth === 31) {
     console.log ("😨")
-}
+} */
+
+
+let fruit = ["🍎", "🍊","🍎","🍎", "🍊"]
+let appleshelf = document.getElementById( "apple-click")
