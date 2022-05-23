@@ -35,7 +35,7 @@ for (let i = 0; i < largeCountries.length; i++) {
 
 */
 
-let largeCountries = ["Tuvalu", "India", "USA", "Indonesia", "Monaco"]
+/* let largeCountries = ["Tuvalu", "India", "USA", "Indonesia", "Monaco"]
 
 largeCountries.pop()
 largeCountries.push ( "Pakistan")
@@ -43,4 +43,11 @@ largeCountries.shift ()
 largeCountries.unshift("China")
 
 
-console.log (largeCountries)
+console.log (largeCountries) */
+
+let dayofMonth = 31
+let weekday = "Friday"
+
+if (weekday === "Friday" && dayofMonth === 31) {
+    console.log ("😨")
+}
