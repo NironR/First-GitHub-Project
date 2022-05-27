@@ -1,8 +1,8 @@
-function showRating(rating) {
-    let ratings = ""
-    for (i = 0; i < rating; ++i) {
-    ratings += "*"
-    } if (i !==rating) {
+function showRating(rating){
+    ratings = ''
+    for (i = 1; i <= rating; + + i){
+        ratings += "*"
+    } if (i !== ratings) {
         ratings += " "
     }
     return ratings
