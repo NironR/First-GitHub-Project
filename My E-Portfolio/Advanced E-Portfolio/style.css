@@ -35,6 +35,17 @@ section {
     background-color: rgb(245, 245, 245);
 }
 
+.container {
+    padding: 50px 0;
+}
+
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
 .click:hover {
     transform: scale(1.1);
 }
@@ -183,4 +194,17 @@ NAVIGATION
 
 .fa-adjust {
     font-size: 20px;
+}
+
+
+/* 
+
+PROJECTS
+
+*/
+
+.section__title {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 60px;
 }
