@@ -7,6 +7,9 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 li {
     list-style-type: none;
@@ -151,9 +154,11 @@ nav,
     border: none;
     background-color: #242424;
     color: white;
-    position: absolute;
+    position: fixed;
     bottom: 32px;
     right: 40px;
+    z-index: 100;
+    box-shadow:  0 12px 30px 0 rgb(0, 0, 0, 0.28);
 }
 
 .scroll {
@@ -591,6 +596,7 @@ footer {
     background-color: #242424;
     display: flex;
     padding: 6% 0;
+    position: relative;
 }
 
 .footer__row {
@@ -621,66 +627,114 @@ footer {
 
 SHAPES
 
-Shapes on the first row 
-height = 35vh
 
-Shapes on the second row 
-height = 70vh
-
-Shapes on the third row
-height = 95vh
-
-Shapes on the first Column
-width = 5vw
-
-Shapes on the second column
-width = 50vw
-
-Shapes on the third column
-width = 80vw
 */
 
+.shape {
+    position: fixed;
+}
+
 .shape--0 {
-    height: 35vh;
-    width: 5vw;
+    top: 15vh;
+    left: 5vw;
 }
 
 .shape--1 {
-    height: 35vh;
-    width: 50vw;
+    top: 15vh;
+    left: 50vw;
 }
 
 .shape--2 {
-    height: 35vh;
-    width: 80vw;
+    top: 15vh;
+    left: 80vw;
 }
 
 .shape--3 {
-    height: 70vh;
-    width: 5vw;
+    top: 50vh;
+    left: 5vw;
 }
 
 .shape--4 {
-    height: 70vh;
-    width: 50vw;
+    top: 50vh;
+    left: 50vw;
 }
 
 .shape--5 {
-    height: 70vh;
-    width: 80vw;
+    top: 50vh;
+    left: 80vw;
 }
 
 .shape--6 {
-    height: 95vh;
-    width: 5vw;
+    top: 80vh;
+    left: 5vw;
 }
 
 .shape--7 {
-    height: 95vh;
-    width: 50vw;
+    top: 80vh;
+    left: 50vw;
 }
 
 .shape--8 {
-    height: 95vh;
-    width: 80vw;
+    top: 80vh;
+    left: 80vw;
 }
+
+/* SMARTPHONES - Small Phones, Tablets, Large Smart-Phones*/
+
+
+@media (max-width: 768px) {
+    .title {
+        font-size:  80px;
+    }
+
+    .header__para {
+        font-size: 20px;
+    }
+    .modal {
+        top: 0;
+        left: 0;
+        height: auto;
+        transform: none;
+        width: 100%;
+        flex-direction: column-reverse;
+        border-radius: 0;
+    }
+
+    .modal__half {
+        width: 100%;
+    }
+
+}
+
+
+/* Small Phones */
+@media (max-width: 480px) {
+    .title {
+        font-size: 52px;
+    }
+    .header__para {
+        font-size: 18px;
+    }
+
+    .nav__link:first-child {
+        display: none;
+    }
+
+    .project__description--para {
+        display: none;
+    }
+
+    .project__description {
+        left: 0;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .project__description--sub-title {
+        margin-bottom: 8px;
+    }
+    .modal__half {
+        padding: 40px;
+    }
+}
+
