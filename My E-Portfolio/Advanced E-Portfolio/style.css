@@ -615,3 +615,72 @@ footer {
 .footer__social--link, .footer__copyright {
     color: white;
 }
+
+
+/* 
+
+SHAPES
+
+Shapes on the first row 
+height = 35vh
+
+Shapes on the second row 
+height = 70vh
+
+Shapes on the third row
+height = 95vh
+
+Shapes on the first Column
+width = 5vw
+
+Shapes on the second column
+width = 50vw
+
+Shapes on the third column
+width = 80vw
+*/
+
+.shape--0 {
+    height: 35vh;
+    width: 5vw;
+}
+
+.shape--1 {
+    height: 35vh;
+    width: 50vw;
+}
+
+.shape--2 {
+    height: 35vh;
+    width: 80vw;
+}
+
+.shape--3 {
+    height: 70vh;
+    width: 5vw;
+}
+
+.shape--4 {
+    height: 70vh;
+    width: 50vw;
+}
+
+.shape--5 {
+    height: 70vh;
+    width: 80vw;
+}
+
+.shape--6 {
+    height: 95vh;
+    width: 5vw;
+}
+
+.shape--7 {
+    height: 95vh;
+    width: 50vw;
+}
+
+.shape--8 {
+    height: 95vh;
+    width: 80vw;
+}
