@@ -1,6 +1,11 @@
 {
 	"folders": [
 		{
+			"name": "Coding",
+			"path": "..\\..\\..\\..\\.."
+		},
+		{
+			"name": "Websites",
 			"path": "..\\..\\..\\..\\..\\..\\Websites"
 		}
 	]
