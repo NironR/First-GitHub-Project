@@ -14,22 +14,22 @@ const Home = () => {
                     <Link to="/store">Store</Link>
                 </div>
                 <div className="header__headerRight">
-                   <Link to="/gmail">Gmail</Link>
-                   <Link to="/images">Images</Link>
+                    <Link to="/gmail">Gmail</Link>
+                    <Link to="/images">Images</Link>
                     <AppsIcon />
                     <Avatar />
                 </div>
             </div>
 
             <div className="home__body">
-                <img 
-                src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="" />
+                <img
+                    src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="" />
                 <div className="home__inputContainer">
-                <Search />
+                    <Search />
+                </div>
+
             </div>
-           
-            </div>
-            
+
         </div>
     );
 }
