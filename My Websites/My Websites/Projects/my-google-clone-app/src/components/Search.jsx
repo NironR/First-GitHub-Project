@@ -7,27 +7,28 @@ import { Button } from '@mui/material';
 import { useStateValue } from './StateProvider';
 import { actionTypes } from './Reducer.jsx';
 
-const Search = ( {hideButtons = false} ) => {
-    const [{}, dispatch] = useStateValue()
-
+function Search( {hideButtons = false} ) {
+    const [{term}, dispatch] = useStateValue()
     const [input, setInput] = useState('')
     const navigate = useNavigate()
 
-    const search = e => {
+    const search = (e) => {
         e.preventDefault();
-        navigate("/search")
-        console.log("You've hit the search button! >>", input)
+        console.log("You've hit the search button! >>")
         dispatch({
             type: actionTypes.SET_SEARCH_TERM,
             term: input
         })
+        navigate('/search')
     }
 
     return (
         <form className='search'>
             <div className="search__input">
                 <SearchIcon className="search__inputIcon"/>
-                <input value={input} onChange={e => setInput(e.target.value)}/>
+                <input value={input} onChange={e => {
+                    return setInput(e.target.value);
+                }}/>
                 <MicIcon />
             </div>
 
