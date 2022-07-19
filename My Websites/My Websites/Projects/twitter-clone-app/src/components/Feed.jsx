@@ -14,6 +14,11 @@ const Feed = () => {
             </div>
             <Tweetbox />
             <Post />
+            <Post />
+            <Post />
+            <Post />
+            <Post />
+            <Post />
         </div>
     );
 }
