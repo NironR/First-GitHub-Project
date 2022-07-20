@@ -4,12 +4,12 @@ import '../App.css'
 import '../components/Feed.css'
 import Tweetbox from './Tweetbox';
 import Post from './ui/Post';
-
+import { auth, db } from '../fiirebase/init'
+import { collection, addDoc, getDocs, doc, getDoc } from 'firebase/firestore';
 
 
 const Feed = () => {
     const [posts, setPosts] = useState([])
-
 
     return (
         <div className="feed">
@@ -17,6 +17,7 @@ const Feed = () => {
                 <h2>Home</h2>
             </div>
             <Tweetbox />
+            
             <Post 
                 displayName="Ryan Norin" 
                 username="niron_r"
@@ -24,7 +25,6 @@ const Feed = () => {
                 text="My kid's got a respiratory virus?"
                 image="https://c.tenor.com/wtlt2yITfSkAAAAd/oh-hot-dog-moistcr1tikal.gif"
                 avatar="https://static.wikia.nocookie.net/1e7fa32e-67a2-4360-a0e8-415d16daf44e/scale-to-width/755"/>
-                
             <Post />
             <Post />
             <Post />
@@ -33,5 +33,7 @@ const Feed = () => {
         </div>
     );
 }
+
+
 
 export default Feed;

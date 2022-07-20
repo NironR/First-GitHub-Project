@@ -3,7 +3,7 @@ import './App.css'
 import Sidebar from './components/Sidebar';
 import Feed from './components/Feed'
 import Widgets from './components/Widgets';
-import Post from './components/ui/Post';
+import { auth, db } from "firebase/firestore"
 
 const App = () => {
   return (
