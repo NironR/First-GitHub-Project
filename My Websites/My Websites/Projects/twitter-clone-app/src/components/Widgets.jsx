@@ -11,7 +11,7 @@ const Widgets = () => {
     return (
         <div>
             <div className="widgets__input">
-                <SearchIcon className='widgets__searchicon'/>
+                <SearchIcon className='widgets__search--icon'/>
                 <input type="text" placeholder='Search Twitter' />
             </div>
             <div className="widgets__widget--container">

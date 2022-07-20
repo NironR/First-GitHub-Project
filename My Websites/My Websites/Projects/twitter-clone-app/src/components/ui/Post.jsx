@@ -11,29 +11,31 @@ const Post = ( {
     displayName,
     username,
     verified,
-    timestamp,
+    text,
+    image,
+    avatar
 }) => { 
     return (
         <div className='post'>
             <div className="post__avatar">
-                <Avatar />
+                <Avatar src={avatar}/>
             </div>
             <div className="post__body">
                 <div className="post__header">
                     <div className="post__header--text">
                         <h3>
-                            Ryan Norin {" "}
+                            {displayName} {" "}
                             <span className='post__header--special'>
-                                <VerifiedIcon className='post__badge'/>
-                                @niron_r
+                                {verified && <VerifiedIcon className='post__badge'/>}
+                                @{username}
                             </span>
                         </h3>
                     </div>
                     <div className="post__header--description">
-                        <p className='post__para'>My kid's got a respiratory virus?</p>
+                        <p className='post__para'>{text}</p>
                     </div>
                 </div>
-                <img src="https://c.tenor.com/wtlt2yITfSkAAAAM/oh-hot-dog-moistcr1tikal.gif" alt="" />
+                <img src={image} alt="" />
                 <div className="post__footer">
                     <ChatBubbleOutlineIcon fontSize='small' />
                     <RepeatIcon fontSize='small'/>
