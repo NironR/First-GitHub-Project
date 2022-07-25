@@ -42,7 +42,7 @@
     color: gray;
 }
 
-.sidebar__voice {
+.sidebar__voice, .sidebar__profile {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -69,5 +69,18 @@
 }
 
 .sidebar__voice--icons > .MuiSvgIcon-root {
+    padding: 10px;
+}
+
+.sidebar__profile--info {
+    flex: 1;
+    padding: 10px;
+}
+
+.sidebar__profile--info > h3 {
+    color: white;
+}
+
+.sidebar__profile--icons > .MuiSvgIcon-root {
     padding: 10px;
 }

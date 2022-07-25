@@ -6,6 +6,10 @@ import SidebarChannel from './ui/SidebarChannel';
 import SignalCellularAltIcon from '@mui/icons-material/SignalCellularAlt';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import CallIcon from '@mui/icons-material/Call';
+import { Avatar } from '@mui/material'
+import MicIcon from '@mui/icons-material/Mic';
+import HeadsetIcon from '@mui/icons-material/Headset';
+import SettingsIcon from '@mui/icons-material/Settings';
 
 const Sidebar = () => {
     return (
@@ -47,7 +51,17 @@ const Sidebar = () => {
             </div>
 
             <div className="sidebar__profile">
-                
+                <Avatar src='https://pbs.twimg.com/profile_images/1192177140252446721/hSoEb_z7_400x400.jpg'/>
+                <div className="sidebar__profile--info">
+                    <h3>Ryan Norin</h3>
+                    <p>#Id</p>
+                </div>
+
+                <div className="sidebar__profile--icons">
+                    <MicIcon />
+                    <HeadsetIcon />
+                    <SettingsIcon />
+                </div>
             </div>
         </div>
     );
