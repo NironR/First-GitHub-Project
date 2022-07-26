@@ -5,6 +5,7 @@ import AddCircleRoundedIcon from '@mui/icons-material/AddCircleRounded';
 import CardGiftcardRoundedIcon from '@mui/icons-material/CardGiftcardRounded';
 import GifRoundedIcon from '@mui/icons-material/GifRounded';
 import EmojiEmotionsRoundedIcon from '@mui/icons-material/EmojiEmotionsRounded';
+import Message from './ui/Message';
 
 const Chat = () => {
     return (
@@ -12,7 +13,8 @@ const Chat = () => {
             <ChatHeader />
 
             <div className="chat__messages">
-
+                <Message />
+                
             </div>
 
             <div className="chat__input">
