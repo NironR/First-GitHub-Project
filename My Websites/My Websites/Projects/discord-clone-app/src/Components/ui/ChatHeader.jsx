@@ -6,8 +6,12 @@ import PeopleAltRoundedIcon from '@mui/icons-material/PeopleAltRounded';
 import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 import SendRoundedIcon from '@mui/icons-material/SendRounded';
 import HelpRoundedIcon from '@mui/icons-material/HelpRounded';
+import { useSelector } from 'react-redux';
+import { selectUser } from '../../features/userSlice';
+import { selectChannelId, selectChannelName } from '../../features/appSlice';
 
-const ChatHeader = () => {
+const ChatHeader = ( {channelName} ) => {
+
     return (
         <div className='chat__header'>
             <div className="chat__header--left">
@@ -15,7 +19,7 @@ const ChatHeader = () => {
                     <span className="chat__header--hash">
                         #
                     </span>
-                    Text Channel Name
+                    {channelName}
                 </h3>
             </div>
 

@@ -15,26 +15,27 @@ import { selectUser} from '../features/userSlice'
 import db, { auth } from '../firebase/init';
 
 const Sidebar = () => {
-    const user = useSelector(selectUser)
-    const [channels, setChannels] = useState([])
+    const user = useSelector(selectUser);
+    const [channels, setChannels] = useState([]);
 
     useEffect(() => {
-        db.collection ("channels").onSnapshot((snapshot) =>
-        setChannels(
-            snapshot.docs.map((doc) => ({
-                id: doc.id,
-                channel: doc.data(),
-            }))
-        ))
-    })
-
+        db.collection("channels").onSnapshot((snapshot) =>
+            setChannels(
+                snapshot.docs.map((doc) => ({
+                    id: doc.id,
+                    channel: doc.data(),
+                }))
+            )
+        );
+    }, []);
+ 
     const handleAddChannel = () => {
-        const channelName = prompt("Enter a new channel name")
+        const channelName = prompt("Enter a new channel name");
 
         if (channelName) {
-            db.collection("channels".push({
+            db.collection("channels").add({
                 channelName: channelName,
-            }));
+            });
         }
     };
 
@@ -53,12 +54,13 @@ const Sidebar = () => {
                     </div>
                     <AddIcon onClick={handleAddChannel} className='sidebar__add--channel' />
                 </div>
-                <div className="sidebar__channels--list">
-                    {channels.map(({id, channel }) => (
-                        <SidebarChannel 
-                        key={id}
-                        id={id}
-                        channelName={channel.channelName}/>
+                <div className="sidebar_channelsList">
+                    {channels.map(({ id, channel }) => (
+                        <SidebarChannel
+                            key={id}
+                            id={id}
+                            channelName={channel.channelName}
+                        />
                     ))}
                 </div>
             </div>
@@ -79,10 +81,10 @@ const Sidebar = () => {
             </div>
 
             <div className="sidebar__profile">
-                <Avatar onClick={() => auth.signOut()} src={user.photo}/>
+            <Avatar onClick={() => auth.signOut()} src={user.photo} />
                 <div className="sidebar__profile--info">
                     <h3>{user.displayName}</h3>
-                    <p>#{user.uid}</p>
+                    <p>#{user.uid.substring(0, 4)}</p>
                 </div>
 
                 <div className="sidebar__profile--icons">
