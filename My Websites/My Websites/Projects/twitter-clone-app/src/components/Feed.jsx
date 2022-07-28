@@ -4,32 +4,42 @@ import '../App.css'
 import '../components/Feed.css'
 import Tweetbox from './Tweetbox';
 import Post from './ui/Post';
-import { auth, db } from '../fiirebase/init'
-import { collection, addDoc, getDocs, doc, getDoc } from 'firebase/firestore';
+import db from '../fiirebase/init'
+import FlipMove from 'react-flip-move'
 
 
 const Feed = () => {
-    const [posts, setPosts] = useState([])
+    const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    db.collection("posts").onSnapshot((snapshot) =>
+      setPosts(snapshot.docs.map((doc) => doc.data()))
+    );
+  }, []);
 
     return (
         <div className="feed">
             <div className='feed__header'>
                 <h2>Home</h2>
             </div>
+
             <Tweetbox />
             
-            <Post 
-                displayName="Ryan Norin" 
-                username="niron_r"
-                verified={true}
-                text="My kid's got a respiratory virus?"
-                image="https://c.tenor.com/wtlt2yITfSkAAAAd/oh-hot-dog-moistcr1tikal.gif"
-                avatar="https://static.wikia.nocookie.net/1e7fa32e-67a2-4360-a0e8-415d16daf44e/scale-to-width/755"/>
-            <Post />
-            <Post />
-            <Post />
-            <Post />
-            <Post />
+            <FlipMove>
+            {posts.map((post) => (
+            <Post
+                key={post.text}
+                displayName={post.displayName}
+                username={post.username}
+                verified={post.verified}
+                text={post.text}
+                avatar={post.avatar}
+                image={post.image}
+            />
+            ))
+            }
+            </FlipMove>
+            
         </div>
     );
 }
