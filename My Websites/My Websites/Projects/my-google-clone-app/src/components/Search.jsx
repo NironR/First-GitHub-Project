@@ -22,7 +22,7 @@ function Search( {hideButtons = false} ) {
             term: input
         })
 
-        navigate.push("/search");
+        navigate("/search");
     }
 
     return (
