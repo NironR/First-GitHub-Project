@@ -12,7 +12,6 @@ function App() {
           <Route path='/' element={<Home initialState={initialState} reducer={reducer}/>} />
           <Route path='/search' element={<SearchPage />}>
           </Route>
-        { /* HOME PAGE*/}
         </Routes>
       </Router>
     </div>
